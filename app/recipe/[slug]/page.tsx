@@ -13,7 +13,12 @@ interface PageParams {
   params: { slug: string };
 }
 
-const young_serif = Young_Serif({ weight: ["400"], subsets: ["latin"] });
+const young_serif = Young_Serif({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 
 export async function generateMetadata({
   params,
